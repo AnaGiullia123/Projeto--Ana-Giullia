@@ -81,7 +81,5 @@
   <footer>
     Projeto desenvolvido por <strong>Ana Giullia</strong>.
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
