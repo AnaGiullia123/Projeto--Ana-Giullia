@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Beleza dos Cabelos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff5f5;
+      color: #2c2c2c;
+      margin: 0;
+      padding: 0;
+      transition: all 0.3s;
+    }
+
+    header {
+      background: linear-gradient(90deg, #b71c1c, #d32f2f);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #c62828;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.7;
+      display: flex;
+      gap: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #b71c1c;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Menu lateral acessibilidade (fixo próximo ao conteúdo) */
+    #acessibilidade {
+      position: sticky;
+      top: 20px;
+      align-self: flex-start;
+      width: 220px;
+      background-color: #ffebee;
+      border: 2px solid #b71c1c;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      height: fit-content;
+    }
+
+    #acessibilidade h3 {
+      text-align: center;
+      color: #b71c1c;
+      margin-bottom: 10px;
+    }
+
+    #acessibilidade button {
+      display: block;
+      margin: 8px auto;
+      padding: 8px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background-color: #c62828;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #acessibilidade button:hover {
+      background-color: #8e0000;
+    }
+
+    /* Conteúdo e menu lado a lado */
+    #conteudo {
+      flex: 1;
+    }
+
+    /* Estilo contraste */
+    .alto-contraste {
+      background-color: #000 !important;
+      color: #fff !important;
+    }
+
+    .alto-contraste header, 
+    .alto-contraste nav {
+      background-color: #000 !important;
+    }
+
+    .alto-contraste a {
+      color: #ff4444 !important;
+    }
+
+    footer {
+      text-align: center;
+      background: #b71c1c;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Beleza dos Cabelos</h1>
+    <h3>Ana Giullia dos Santos - 3A</h3>
+    <p>História, tipos, cuidados e penteados para realçar sua beleza natural.</p>
+  </header>
+
+  <nav>
+    <a href="#tipos">Tipos</a>
+    <a href="#modelos">Modelos</a>
+    <a href="#cuidados">Cuidados</a>
+    <a href="#historia">História</a>
+    <a href="#curiosidades">Curiosidades</a>
+  </nav>
+
+  <main>
+    <!-- Menu de acessibilidade lateral -->
+    <div id="acessibilidade">
+      <h3>Acessibilidade</h3>
+      <button onclick="aumentarFonte()">Aumentar Fonte</button>
+      <button onclick="diminuirFonte()">Diminuir Fonte</button>
+      <button onclick="alternarContraste()">Alto Contraste</button>
+      <button onclick="resetar()">Resetar</button>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div id="conteudo">
+      <section id="tipos">
+        <h2>Tipos de Cabelo</h2>
+        <p>Os cabelos podem variar em textura, espessura e formato dos fios:</p>
+        <ul>
+          <li><strong>Liso:</strong> fios alinhados, geralmente mais oleosos e fáceis de escovar.</li>
+          <li><strong>Ondulado:</strong> apresenta leves ondas que dão movimento e volume.</li>
+          <li><strong>Cacheado:</strong> com cachos definidos, precisa de hidratação regular.</li>
+          <li><strong>Crespo:</strong> fios mais finos, volumosos e com cachos bem pequenos.</li>
+        </ul>
+      </section>
+
+      <section id="modelos">
+        <h2>Modelos de Penteados</h2>
+        <p>Alguns penteados populares que valorizam os cabelos:</p>
+        <ul>
+          <li><strong>Rabo de cavalo:</strong> clássico e versátil.</li>
+          <li><strong>Tranças:</strong> embutidas, box braids ou simples.</li>
+          <li><strong>Coques:</strong> despojados ou elegantes para ocasiões formais.</li>
+          <li><strong>Solto natural:</strong> com volume, ondas ou liso escovado.</li>
+        </ul>
+      </section>
+
+      <section id="cuidados">
+        <h2>Cuidados Essenciais</h2>
+        <p>Para manter cabelos saudáveis:</p>
+        <ul>
+          <li>Lavar de acordo com o tipo de cabelo (oleoso, normal ou seco).</li>
+          <li>Hidratar pelo menos uma vez por semana.</li>
+          <li>Usar protetor térmico antes de secador, chapinha ou babyliss.</li>
+          <li>Evitar excesso de química sem acompanhamento profissional.</li>
+          <li>Proteger contra sol, vento e poluição.</li>
+        </ul>
+      </section>
+
+      <section id="historia">
+        <h2>História do Cabelo</h2>
+        <p>O cabelo sempre foi um símbolo cultural e social. No Egito Antigo, perucas eram comuns e representavam status. 
+        Na Idade Média, os cabelos longos eram sinal de nobreza. 
+        Já nos anos 60, cortes ousados simbolizavam revolução e liberdade. 
+        Hoje, o cabelo é uma forma de expressão pessoal e estilo.</p>
+      </section>
+
+      <section id="curiosidades">
+        <h2>Curiosidades</h2>
+        <ul>
+          <li>O cabelo humano cresce em média 1 a 1,5 cm por mês.</li>
+          <li>Uma pessoa perde cerca de 50 a 100 fios de cabelo por dia.</li>
+          <li>O cabelo é composto principalmente por uma proteína chamada queratina.</li>
+          <li>O tipo de fio é influenciado pela genética e pelo formato do folículo capilar.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Projeto desenvolvido por <strong>Ana Giullia</strong>.
+  </footer>
+
+  <script>
+    let tamanhoFonte = 16;
+    let contrasteAtivo = false;
+
+    function aumentarFonte() {
+      tamanhoFonte += 2;
+      document.body.style.fontSize = tamanhoFonte + "px";
+    }
+
+    function diminuirFonte() {
+      if (tamanhoFonte > 10) {
+        tamanhoFonte -= 2;
+        document.body.style.fontSize = tamanhoFonte + "px";
+      }
+    }
+
+    function alternarContraste() {
+      contrasteAtivo = !contrasteAtivo;
+      if (contrasteAtivo) {
+        document.body.classList.add("alto-contraste");
+      } else {
+        document.body.classList.remove("alto-contraste");
+      }
+    }
+
+    function resetar() {
+      tamanhoFonte = 16;
+      document.body.style.fontSize = "16px";
+      contrasteAtivo = false;
+      document.body.classList.remove("alto-contraste");
+    }
+  </script>
+</body>
+</html>
