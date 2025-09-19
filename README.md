@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Beleza dos Cabelos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
